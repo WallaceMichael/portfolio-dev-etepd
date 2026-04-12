@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <script> (function () {
+      var t = localStorage.getItem("tema");
+      if (!t || t === "dark")
+        document.documentElement.classList.remove("light");
+      else document.documentElement.classList.add("light");
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos - WallyDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Início">
+        <span class="tag-open">&lt;/</span>WallyDev<span class="tag-close">&gt;</span>
+      </a>
+
+      <!-- Links -->
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Sobre</a></li>
+          <li><a href="projects.html" class="nav-link">Projetos</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- toggle de tema + hambúrguer -->
+      <div class="nav-direita">
+        <!-- Toggle dark / light -->
+        <button class="theme-btn" id="theme-btn">
+          <div class="toggle-thumb">
+            <i class="fa-solid fa-moon icon-lua"></i>
+            <i class="fa-solid fa-sun icon-sol"></i>
+          </div>
+        </button>
+
+        <button class="btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menu mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Sobre</a>
+      <a href="projects.html" class="nav-link">Projetos</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="contact.html" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pg-head">
+      <div class="container">
+        <span class="rotulo revelar">Desenvolvimento</span>
+        <div style=" display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap;">
+          <h1 class="revelar d1">Projetos</h1>
+          <span class="rotulo revelar d2" style="font-size: 0.9rem">
+            — <span id="total-projetos">—</span> projetos
+          </span>
+        </div>
+        <span class="detalhe-num" aria-hidden="true">02</span>
+      </div>
+    </div>
+
+    <section class="secao">
+      <div class="container">
+        <!-- Filtros + busca -->
+        <div style=" display: flex; justify-content: space-between; 
+          align-items: center; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 2rem;">
+          <div id="filtros" class="filtros" style="margin-bottom: 0" role="group" aria-label="Filtrar por tecnologia">
+            <span class="rotulo" style="opacity: 0.5">Carregando...</span>
+          </div>
+          <div class="busca-wrap" style="margin-bottom: 0">
+            <span class="busca-ico">🔍</span>
+            <input type="search" id="campo-busca" class="campo-busca" placeholder="Buscar projeto..."
+              aria-label="Buscar" />
+          </div>
+        </div>
+
+        <!-- Grid populado via JS -->
+        <div id="grid-projetos" class="grid-3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">
+            <span style="color: var(--accent)">&lt;/</span>WallyDev<span style="color: var(--accent)">&gt;
+            </span>
+          </span>
+          <p class="footer-bio">
+            Desenvolvedor apaixonado por transformar código em experiências
+            que fazem a diferença.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="mailto:wallacemsm2@email.com">E-mail</a></li>
+            <li><a href="https://github.com/WallaceMichael" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/wallace-michael-25173b197/" target="_blank"
+                rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span id="ano-atual"></span> WallyDev — Todos os direitos reservados.</span>
+        <span>Feito com HTML, CSS &amp; JS ✨</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

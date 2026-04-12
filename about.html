@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <script> (function () {
+      var t = localStorage.getItem("tema");
+      if (!t || t === "dark")
+        document.documentElement.classList.remove("light");
+      else document.documentElement.classList.add("light");
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mim - WallyDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Início">
+        <span class="tag-open">&lt;/</span>WallyDev<span class="tag-close">&gt;</span>
+      </a>
+
+      <!-- Links -->
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Sobre</a></li>
+          <li><a href="projects.html" class="nav-link">Projetos</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- toggle de tema + hambúrguer -->
+      <div class="nav-direita">
+        <!-- Toggle dark / light -->
+        <button class="theme-btn" id="theme-btn">
+          <div class="toggle-thumb">
+            <i class="fa-solid fa-moon icon-lua"></i>
+            <i class="fa-solid fa-sun icon-sol"></i>
+          </div>
+        </button>
+
+        <button class="btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menu mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Sobre</a>
+      <a href="projects.html" class="nav-link">Projetos</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="contact.html" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pg-head">
+      <div class="container">
+        <span class="rotulo revelar">Conheça-me</span>
+        <h1 class="revelar d1">Sobre Mim</h1>
+        <span class="detalhe-num" aria-hidden="true">01</span>
+      </div>
+    </div>
+
+    <!-- BIO + FOTO -->
+    <section class="secao">
+      <div class="container">
+        <div class="sobre-grid">
+
+          <!-- Foto -->
+          <div class="blob-wrap revelar" style="width: 260px; height: 300px; margin: 0 auto">
+            <div class="blob-frame">
+              <img src="assets/images/profile/foto.jpg" alt="Foto de Wallace Melo" />
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div>
+            <span class="rotulo revelar">Quem sou eu</span>
+            <h2 class="revelar d1" style="margin-bottom: 1.25rem">
+              Olá! Sou <span style="color: var(--accent)">Wallace Melo</span> 👋
+            </h2>
+
+            <!-- bio -->
+            <p class="revelar d2" style="margin-bottom: 1rem">
+              Sou desenvolvedor front-end com mais de 2 anos de
+              experiência construindo aplicações web modernas. Comecei a
+              programar em 2022 e me apaixonei por transformar ideias em
+              código funcional e pensado na experiência do usuário.
+            </p>
+            <p class="revelar d3" style="margin-bottom: 2rem">
+              Fora do código, gosto de cozinhar, assistir filmes/animes e fazer exercícios.
+            </p>
+
+            <!-- Info -->
+            <div class="sobre-info revelar d4">
+              <div class="info-item">
+                <span class="info-rotulo">Localização</span>
+                <span class="info-valor">Recife, BR</span>
+              </div>
+              <div class="info-item">
+                <span class="info-rotulo">Formação</span>
+                <span class="info-valor">Análise e Desenvolvimento de Sistemas</span>
+              </div>
+              <div class="info-item">
+                <span class="info-rotulo">Status</span>
+                <span class="info-valor" style="color: #4ade80">● Disponível</span>
+              </div>
+              <div class="info-item">
+                <span class="info-rotulo">Idiomas</span>
+                <span class="info-valor">PT · EN</span>
+              </div>
+            </div>
+
+            <div style=" display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;" class="revelar d4">
+              <a href="contact.html" class="btn btn-prim">Entre em Contato ↗</a>
+              <!-- link do currículo -->
+              <a href="assets/docs/Wallace_Melo_CV.pdf" download="Wallace_Melo_CV.pdf" class="btn btn-ghost"> ↓ Baixar CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="secao" style="border-top: 1px solid var(--border-soft)">
+      <div class="container">
+        <span class="rotulo revelar">Jornada</span>
+        <h2 class="revelar d1" style="margin-bottom: 0">
+          Experiência &amp; Formação
+        </h2>
+
+        <div class="timeline">
+
+          <div class="tl-item revelar">
+            <p class="tl-data">Jan 2023 — Presente</p>
+            <h3 class="tl-cargo">Web Designer</h3>
+            <p class="tl-empresa">Verdanatech</p>
+            <p style="font-size: 0.85rem; margin-bottom: 0.75rem">
+              Atuação no design e desenvolvimento de interfaces web e mobile, criação de layouts, identidade visual e
+              experiências centradas no usuário.
+            </p>
+            <div class="tags">
+              <span class="tag">UX/UI</span>
+              <span class="tag">Figma</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">GSAP</span>
+            </div>
+          </div>
+
+          <div class="tl-item revelar d1">
+            <p class="tl-data">2023 — Presente</p>
+            <h3 class="tl-cargo">Web Designer & Desenvolvedor</h3>
+            <p class="tl-empresa">Millki</p>
+            <p style="font-size: 0.85rem; margin-bottom: 0.75rem">
+              Desenvolvimento de sites institucionais, landing pages e interfaces responsivas, com foco em performance,
+              usabilidade e experiência do usuário.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UX/UI</span>
+            </div>
+          </div>
+
+          <div class="tl-item revelar d2">
+            <p class="tl-data">Jul 2022 — Set 2022</p>
+            <h3 class="tl-cargo">Estagiário em Design Gráfico</h3>
+            <p class="tl-empresa">TV Pernambuco</p>
+            <p style="font-size: 0.85rem; margin-bottom: 0.75rem">
+              Criação de peças gráficas, layouts e identidade visual para campanhas e mídias digitais.
+            </p>
+            <div class="tags">
+              <span class="tag">Design Gráfico</span>
+              <span class="tag">Adobe</span>
+            </div>
+          </div>
+
+          <div class="tl-item revelar d3">
+            <p class="tl-data">2023 — Atual</p>
+            <h3 class="tl-cargo">Análise e Desenvolvimento de Sistemas</h3>
+            <p class="tl-empresa">Uninassau</p>
+            <p style="font-size: 0.85rem">
+              Graduação com foco em desenvolvimento de software e aplicações web.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="secao" style="border-top: 1px solid var(--border-soft)">
+      <div class="container">
+        <span class="rotulo revelar">Além do código</span>
+        <h2 class="revelar d1" style="margin-bottom: 2.5rem">Interesses</h2>
+        <div class="grid-3">
+
+          <div class="revelar skill-secao d1" style="text-align: center">
+            <div style="font-size: 2.5rem; margin-bottom: 0.75rem">🎮</div>
+            <strong style="display: block; margin-bottom: 0.35rem">Games</strong>
+            <p style="font-size: 0.82rem">
+              Curto jogos como Valorant, Counter-Strike e RPGs.
+            </p>
+          </div>
+
+          <div class="revelar skill-secao d2" style="text-align: center">
+            <div style="font-size: 2.5rem; margin-bottom: 0.75rem">📚</div>
+            <strong style="display: block; margin-bottom: 0.35rem">Leitura</strong>
+            <p style="font-size: 0.82rem">
+              Gosto de leituras de suspense, ficção científica e investigação.
+            </p>
+          </div>
+
+          <div class="revelar skill-secao d3" style="text-align: center">
+            <div style="font-size: 2.5rem; margin-bottom: 0.75rem">🎵</div>
+            <strong style="display: block; margin-bottom: 0.35rem">Música</strong>
+            <p style="font-size: 0.82rem">
+              Escuto rap, pop, rock, música eletrônica e brasileira.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">
+            <span style="color: var(--accent)">&lt;/</span>WallyDev<span style="color: var(--accent)">&gt;
+            </span>
+          </span>
+          <p class="footer-bio">
+            Desenvolvedor apaixonado por transformar código em experiências
+            que fazem a diferença.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="mailto:wallacemsm2@email.com">E-mail</a></li>
+            <li><a href="https://github.com/WallaceMichael" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/wallace-michael-25173b197/" target="_blank"
+                rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span id="ano-atual"></span> WallyDev — Todos os direitos reservados.</span>
+        <span>Feito com HTML, CSS &amp; JS ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

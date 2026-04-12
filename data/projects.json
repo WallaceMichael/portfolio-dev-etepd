@@ -1,0 +1,65 @@
+{
+  "projetos": [
+    {
+      "titulo": "Portfólio Pessoal",
+      "descricao": "Site de portfólio para apresentar projetos, habilidades e informações de contato.",
+      "emoji": "👨‍💻",
+      "techs": ["HTML", "CSS", "JavaScript"],
+      "status": "Concluído",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/portfolio-dev-etepd",
+      "demo": null
+    },
+    {
+      "titulo": "Plataforma WoHub",
+      "descricao": "Plataforma de cursos online com sistema de login, catálogo de cursos, aulas em vídeo e avaliações.",
+      "emoji": "🎓",
+      "techs": ["PHP", "Vue", "Blade", "TypeScript"],
+      "status": "Concluído",
+      "ano": "2025",
+      "github": "https://github.com/WallaceMichael/wohub",
+      "demo": null
+    },
+    {
+      "titulo": "Site Verdanatech",
+      "descricao": "Site institucional para empresa de tecnologia, com seções ",
+      "emoji": "🏢",
+      "techs": ["WordPress", "Elementor", "CSS", "JS"],
+      "status": "Concluído",
+      "ano": "2025",
+      "github": null,
+      "demo": "https://verdanatech.com"
+    },
+    {
+      "titulo": "Landing Page de Curso",
+      "descricao": "Landing page para promoção de curso, com formulário de inscrição e depoimentos de alunos.",
+      "emoji": "📚",
+      "techs": ["WordPress", "Elementor","PHP", "JS"],
+      "status": "Concluído",
+      "ano": "2025",
+      "github": null,
+      "demo": "https://pg.empreenderdinheiro.com.br/lc/consultor-financeiro-em-um-dia-a-gg-ads/3ed/"
+    },
+    {
+      "titulo": "MovieStar",
+      "descricao": "Plataforma para criar, visualizar e editar filmes na sua área de membros.",
+      "emoji": "🎬",
+      "techs": ["PHP","CSS","bootstrap","MySQL"],
+      "status": "Concluído",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/moviestar",
+      "demo": null
+      
+    },
+    {
+      "titulo": "Blog Verdanadesk",
+      "descricao": "Blog para verdanatech, com conteúdo sobre tecnologia e desenvolvimento.",
+      "emoji": "📝",
+      "techs": ["WordPress", "Elementor", "PHP", "JS"],
+      "status": "Concluído",
+      "ano": "2025",
+      "github": null,
+      "demo": "https://verdanadesk.com/blog"
+    }
+  ]
+}

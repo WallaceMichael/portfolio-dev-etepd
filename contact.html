@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <script> (function () {
+      var t = localStorage.getItem("tema");
+      if (!t || t === "dark")
+        document.documentElement.classList.remove("light");
+      else document.documentElement.classList.add("light");
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - WallyDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Início">
+        <span class="tag-open">&lt;/</span>WallyDev<span class="tag-close">&gt;</span>
+      </a>
+
+      <!-- Links -->
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Sobre</a></li>
+          <li><a href="projects.html" class="nav-link">Projetos</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- toggle de tema + hambúrguer -->
+      <div class="nav-direita">
+        <!-- Toggle dark / light -->
+        <button class="theme-btn" id="theme-btn">
+          <div class="toggle-thumb">
+            <i class="fa-solid fa-moon icon-lua"></i>
+            <i class="fa-solid fa-sun icon-sol"></i>
+          </div>
+        </button>
+
+        <button class="btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menu mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Sobre</a>
+      <a href="projects.html" class="nav-link">Projetos</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="contact.html" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pg-head">
+      <div class="container">
+        <span class="rotulo revelar">Entre em contato</span>
+        <h1 class="revelar d1">Contato</h1>
+        <span class="detalhe-num" aria-hidden="true">05</span>
+      </div>
+    </div>
+
+    <section class="secao contato-sec">
+      <div class="container contato-grid">
+
+        <div class="contato-texto revelar d1">
+          <p class="contato-frase">
+            Trabalho com uma abordagem
+            centrada no usuário, buscando sempre transformar ideias em soluções visuais
+            funcionais e acessíveis.
+          </p>
+
+          <p class="contato-cta">
+            <a href="mailto:wallacemsm2@gmail.com">Bora conversar? ☕</a>
+          </p>
+        </div>
+
+        <div class="contato-direita">
+
+          <a href="https://github.com/WallaceMichael" target="_blank" class="github-card revelar d2">
+            <div class="gh-avatar"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="gh-handle">@WallaceMichael</p>
+              <p class="gh-bio">
+                Desenvolvedor focado em criar soluções reais, sistemas web e experiências digitais eficientes.
+              </p>
+            </div>
+          </a>
+
+          <div class="social-icons revelar d3">
+
+            <a href="https://www.linkedin.com/in/wallace-michael-dev" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:wallacemsm2@gmail.com" aria-label="E-mail">
+              <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/WallaceMichael" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://millkiagencia.com.br" target="_blank" aria-label="Meu site">
+              <i class="fas fa-globe"></i>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="secao" style="border-top: 1px solid var(--border-soft)">
+      <div class="container">
+        <div class="grid-2" style="align-items: start; gap: 4rem">
+          <div>
+            <span class="rotulo revelar" style="margin-bottom: 1rem">Ou me envie uma mensagem</span>
+            <h2 class="revelar d1" style="margin-bottom: 2rem; font-size: 1.75rem">
+              Formulário de Contato
+            </h2>
+
+            <form id="form-contato" novalidate class="revelar d2">
+              <div class="campo">
+                <label class="campo-label" for="nome">Nome *</label>
+                <input type="text" id="nome" class="campo-input" placeholder="Seu nome" required />
+                <span class="campo-erro" id="erro-nome"></span>
+              </div>
+              <div class="campo">
+                <label class="campo-label" for="email">E-mail *</label>
+                <input type="email" id="email" class="campo-input" placeholder="seu@email.com" required />
+                <span class="campo-erro" id="erro-email"></span>
+              </div>
+              <div class="campo">
+                <label class="campo-label" for="assunto">Assunto *</label>
+                <input type="text" id="assunto" class="campo-input" placeholder="Projeto, oportunidade, dúvida..."
+                  required />
+                <span class="campo-erro" id="erro-assunto"></span>
+              </div>
+              <div class="campo">
+                <label class="campo-label" for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" class="campo-input" placeholder="Olá! Gostaria de..." required></textarea>
+                <span class="campo-erro" id="erro-mensagem"></span>
+              </div>
+              <button type="submit" class="btn btn-prim" style="width: 100%; justify-content: center">
+                Enviar Mensagem ↗
+              </button>
+
+              <div id="form-ok" class="form-ok">
+                ✓ Mensagem enviada! Responderei em breve.
+              </div>
+            </form>
+          </div>
+
+          <!-- Info de contato direto -->
+          <div class="revelar d1">
+            <span class="rotulo" style="margin-bottom: 1.5rem; display: block">Informações</span>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem">
+
+              <div class="skill-secao">
+                <span class="rotulo" style="margin-bottom: 0.3rem">E-mail</span>
+                <a href="mailto:wallacemsm2@gmail.com"
+                  style="color: var(--accent); font-size: 0.88rem">wallacemsm2@gmail.com</a>
+              </div>
+              <div class="skill-secao">
+                <span class="rotulo" style="margin-bottom: 0.3rem">LinkedIn</span>
+                <a href="https://linkedin.com/in/wallace-michael-dev" target="_blank" rel="noopener"
+                  style="color: var(--accent); font-size: 0.88rem">linkedin.com/in/wallace-michael-dev</a>
+              </div>
+              <div class="skill-secao">
+                <span class="rotulo" style="margin-bottom: 0.3rem">Localização</span>
+                <span style="font-size: 0.88rem; color: var(--text)">Recife, PE — Brasil</span>
+              </div>
+              <div class="skill-secao" style="display: flex; align-items: center; gap: 0.6rem">
+                <span style="
+                      width: 8px;
+                      height: 8px;
+                      border-radius: 50%;
+                      background: #4ade80;
+                      display: inline-block;
+                      animation: pulsar 2s infinite;
+                    "></span>
+                <span style="font-size: 0.82rem; color: #4ade80">Disponível para novos projetos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">
+            <span style="color: var(--accent)">&lt;/</span>WallyDev<span style="color: var(--accent)">&gt;
+            </span>
+          </span>
+          <p class="footer-bio">
+            Desenvolvedor apaixonado por transformar código em experiências
+            que fazem a diferença.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="mailto:wallacemsm2@email.com">E-mail</a></li>
+            <li><a href="https://github.com/WallaceMichael" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/wallace-michael-25173b197/" target="_blank"
+                rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span id="ano-atual"></span> WallyDev — Todos os direitos reservados.</span>
+        <span>Feito com HTML, CSS &amp; JS ✨</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script>
+    (function () {
+      emailjs.init("3GwU7vLQW6WbHfDL8"); // ⚠️ coloca sua PUBLIC KEY aqui
+    })();
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

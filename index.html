@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <script> (function () {
+      var t = localStorage.getItem("tema");
+      if (!t || t === "dark")
+        document.documentElement.classList.remove("light");
+      else document.documentElement.classList.add("light");
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WallyDev</title>
+  <meta name="description" content="Desenvolvedor front-end criando experiências digitais memoráveis." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Início">
+        <span class="tag-open">&lt;/</span>WallyDev<span class="tag-close">&gt;</span>
+      </a>
+
+      <!-- Links -->
+      <nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Sobre</a></li>
+          <li><a href="projects.html" class="nav-link">Projetos</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="contact.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- toggle de tema + hambúrguer -->
+      <div class="nav-direita">
+        <!-- Toggle dark / light -->
+        <button class="theme-btn" id="theme-btn">
+          <div class="toggle-thumb">
+            <i class="fa-solid fa-moon icon-lua"></i>
+            <i class="fa-solid fa-sun icon-sol"></i>
+          </div>
+        </button>
+
+        <button class="btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menu mobile">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Sobre</a>
+      <a href="projects.html" class="nav-link">Projetos</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="contact.html" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text">
+
+            <!-- Status online -->
+            <div class="hero-kicker revelar">
+              <span class="hero-dot"></span> Disponível para projetos
+            </div>
+
+            <!-- seu nome -->
+            <h1 class="hero-nome revelar d1">
+              Olá, sou <br />
+              <span style="color: var(--accent)">Wallace Melo</span>.
+            </h1>
+
+            <div class="hero-divider revelar d2"></div>
+
+            <!-- sua bio em 2 frases -->
+            <p class="hero-sub revelar d2">
+              Transformo ideias em interfaces que as pessoas
+              <strong style="color: var(--text)">adoram usar</strong>. Código
+              limpo, design cuidadoso e foco na experiência.
+            </p>
+
+            <div class="hero-acoes revelar d3">
+              <a href="projects.html" class="btn btn-prim">Ver Projetos ↗</a>
+              <a href="contact.html" class="btn btn-ghost">Fale Comigo</a>
+            </div>
+
+            <!-- links sociais -->
+            <div class="hero-redes revelar d4">
+              <a href="https://github.com/WallaceMichael" target="_blank" rel="noopener" class="rede-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/wallace-michael-dev/" target="_blank" rel="noopener"
+                class="rede-link">LinkedIn</a>
+              <a href="mailto:wallacemsm2@gmail.com" class="rede-link">E-mail</a>
+            </div>
+          </div>
+
+          <!-- ══ FOTO ══ -->
+          <div class="blob-wrap revelar d2">
+            <div class="blob-frame">
+              <img src="assets/images/profile/foto.jpg" alt="Foto de perfil" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TICKER DE TECNOLOGIAS ══ -->
+    <!-- Suas tecnologias/especialidades.
+        - Duplicado para criar o loop infinito, edite os dois blocos.
+        - Use no máximo 10 itens para melhor visual.
+    -->
+    <div class="ticker">
+      <div class="ticker-inner" aria-hidden="true">
+        <!-- Bloco 1 -->
+        <span class="ticker-item">HTML &amp; CSS</span>
+        <span class="ticker-item">JavaScript</span>
+        <span class="ticker-item">React</span>
+        <span class="ticker-item">TypeScript</span>
+        <span class="ticker-item">Node.js</span>
+        <span class="ticker-item">Figma</span>
+        <span class="ticker-item">Git &amp; GitHub</span>
+        <span class="ticker-item">Next.js</span>
+        <span class="ticker-item">SQL</span>
+        <span class="ticker-item">UI / UX</span>
+        <!-- Bloco 2 — duplicado para o loop -->
+        <span class="ticker-item">HTML &amp; CSS</span>
+        <span class="ticker-item">JavaScript</span>
+        <span class="ticker-item">React</span>
+        <span class="ticker-item">TypeScript</span>
+        <span class="ticker-item">Node.js</span>
+        <span class="ticker-item">Figma</span>
+        <span class="ticker-item">Git &amp; GitHub</span>
+        <span class="ticker-item">Next.js</span>
+        <span class="ticker-item">SQL</span>
+        <span class="ticker-item">UI / UX</span>
+      </div>
+    </div>
+
+    <!-- ══ PROJETOS EM DESTAQUE ══ -->
+    <section class="secao">
+      <div class="container">
+        <div class="sec-head revelar">
+          <div>
+            <span class="rotulo">Desenvolvimento</span>
+            <h2>Projetos</h2>
+          </div>
+          <a href="projects.html" class="btn-link">Ver todos ↗</a>
+        </div>
+
+        <!-- Dados populado via JS (3 primeiros ) -->
+        <div id="grid-projetos" class="grid-3">
+          <div class="card" style="opacity: 0.3">
+            <div class="card-thumb"></div>
+            <div class="card-body" style="height: 900px"></div>
+          </div>
+          <div class="card" style="opacity: 0.2">
+            <div class="card-thumb"></div>
+            <div class="card-body" style="height: 140px"></div>
+          </div>
+          <div class="card" style="opacity: 0.1">
+            <div class="card-thumb"></div>
+            <div class="card-body" style="height: 140px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <section class="secao" style="border-top: 1px solid var(--border-soft)">
+      <div class="container" style="text-align: center">
+        <span class="rotulo revelar" style="margin-bottom: 1rem">
+          Próximo passo
+        </span>
+        <h2 class="revelar d1" style="margin-bottom: 1.25rem">
+          Tem um projeto em mente?
+        </h2>
+        <p class="revelar d2" style="max-width: 44ch; margin: 0 auto 2rem">
+          Estou disponível para projetos, freelances e oportunidades CLT.
+          Vamos conversar!
+        </p>
+        <a href="contact.html" class="btn btn-prim revelar d3">
+          Entre em Contato ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">
+            <span style="color: var(--accent)">&lt;/</span>WallyDev<span style="color: var(--accent)">&gt;
+            </span>
+          </span>
+          <p class="footer-bio">
+            Desenvolvedor apaixonado por transformar código em experiências
+            que fazem a diferença.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="mailto:wallacemsm2@email.com">E-mail</a></li>
+            <li><a href="https://github.com/WallaceMichael" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/wallace-michael-25173b197/" target="_blank"
+                rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span id="ano-atual"></span> WallyDev — Todos os direitos reservados.</span>
+        <span>Feito com HTML, CSS &amp; JS ✨</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
