@@ -1,20 +1,30 @@
 <p align="center">
   <img src="assets/docs/banner-dev.svg" width="100%" alt="Portfólio Dev - ETE Porto Digital"/>
 </p>
+
+<p align="center">
+  <a href="https://github.com/WallaceMichael/portfolio-dev-etepd/stargazers">
+    <img src="https://img.shields.io/github/stars/WallaceMichael/portfolio-dev-etepd?style=for-the-badge&color=818CF8&labelColor=0A0A0A" alt="Stars"/>
+  </a>
+  <a href="https://github.com/WallaceMichael/portfolio-dev-etepd/commits/main">
+    <img src="https://img.shields.io/github/last-commit/WallaceMichael/portfolio-dev-etepd?style=for-the-badge&color=F472B6&labelColor=0A0A0A" alt="Último commit"/>
+  </a>
+  <img src="https://img.shields.io/badge/status-ativo-4ade80?style=for-the-badge&labelColor=0A0A0A" alt="Status"/>
+  <img src="https://img.shields.io/badge/licença-MIT-818CF8?style=for-the-badge&labelColor=0A0A0A" alt="Licença"/>
+</p>
+
 ---
 
 ## 💡 Sobre o projeto
 
-Projeto desenvolvido durante a oficina prática de **Git e GitHub** na [ETE Porto Digital](https://www.instagram.com/eteportodigital/), com foco na criação e publicação de um portfólio simples para desenvolvedores em formação.
-
-Durante a oficina, os participantes aprendem na prática como criar um repositório, versionar arquivos, trabalhar com branches e disponibilizar seus projetos na internet — tudo com ferramentas reais do mercado.
+Portfólio desenvolvido durante a oficina prática de **Git e GitHub** na [ETE Porto Digital](https://www.instagram.com/eteportodigital/). O projeto tem como foco ensinar desenvolvedores em formação a criar, versionar e publicar seus próprios portfólios com ferramentas reais do mercado.
 
 ---
 
 ## 🎯 Objetivos da oficina
 
 - [x] Apresentar o Git e GitHub de forma prática
-- [x] Ensinar comandos essenciais de versionamento
+- [x] Ensinar os comandos essenciais de versionamento
 - [x] Desenvolver um portfólio em HTML, CSS e JavaScript
 - [x] Publicar o projeto online via GitHub Pages
 - [x] Incentivar a criação de projetos autorais
@@ -24,7 +34,7 @@ Durante a oficina, os participantes aprendem na prática como criar um repositó
 ## 🛠️ Tecnologias utilizadas
 
 | Tecnologia | Versão | Uso |
-|------------|--------|-----|
+|---|---|---|
 | ![HTML5](https://img.shields.io/badge/HTML5-0A0A0A?style=flat-square&logo=html5&logoColor=818CF8) | 5 | Estrutura das páginas |
 | ![CSS3](https://img.shields.io/badge/CSS3-0A0A0A?style=flat-square&logo=css3&logoColor=818CF8) | 3 | Estilização e responsividade |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-0A0A0A?style=flat-square&logo=javascript&logoColor=F472B6) | ES6+ | Interatividade e filtros |
@@ -41,9 +51,9 @@ portfolio-dev-etepd/
 ├── assets/
 │   ├── css/
 │   ├── docs/
-│   │   └── banner.svg        ← banner do README
+│   │   └── banner-dev.svg        ← banner do README
 │   ├── images/
-│   │   └── profile/
+│   │   └── foto.jpg
 │   └── js/
 │
 ├── data/
@@ -68,11 +78,11 @@ portfolio-dev-etepd/
 - **Skills** — barras de progresso animadas e certificações
 - **Contato** — formulário com validação e links sociais
 - **Download de currículo** — disponível direto na página
-- **Toggle dark/light** — troca de tema com preferência salva
+- **Tema dark/light** — alternância com preferência salva no navegador
 
 ---
 
-## 🚀 Como usar
+## 🚀 Como rodar o projeto
 
 ### 1. Clone o repositório
 
@@ -91,7 +101,53 @@ code .
 
 Clique em **Go Live** na barra inferior do VS Code e acesse `http://127.0.0.1:5500`.
 
-> Não tem o Live Server? Instale pela aba de **Extensões** (`Ctrl+Shift+X`).
+> 💡 Sem o Live Server? Instale pela aba de **Extensões** (`Ctrl+Shift+X`).
+
+---
+
+## 📧 Configuração do formulário (EmailJS)
+
+O formulário de contato utiliza o [EmailJS](https://www.emailjs.com) para enviar mensagens sem precisar de back-end.
+
+### Passo 1 — Criar conta
+
+Acesse [emailjs.com](https://www.emailjs.com), clique em **Sign Up** e crie sua conta.
+
+### Passo 2 — Criar um serviço de e-mail
+
+1. Vá em **Email Services** → **Add New Service**
+2. Escolha seu provedor (ex: Gmail) e conecte sua conta
+3. Copie o **Service ID** gerado
+
+### Passo 3 — Criar um template de e-mail
+
+1. Vá em **Email Templates** → **Create New Template**
+2. Monte seu template usando as variáveis abaixo:
+
+| Variável | Descrição |
+|---|---|
+| `{{nome}}` | Nome do remetente |
+| `{{email}}` | E-mail do remetente |
+| `{{assunto}}` | Assunto da mensagem |
+| `{{mensagem}}` | Corpo da mensagem |
+| `{{time}}` | Data/hora do envio |
+
+3. Salve e copie o **Template ID**
+
+### Passo 4 — Obter a Public Key
+
+1. Acesse **Account → API Keys**
+2. Copie sua **Public Key**
+
+### Passo 5 — Configurar no projeto
+
+No arquivo `assets/js/script.js`, localize a seção do formulário e substitua os valores indicados pelos comentários:
+
+```js
+emailjs.init("SUA_PUBLIC_KEY");
+
+emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
+```
 
 ---
 
@@ -102,7 +158,9 @@ Clique em **Go Live** na barra inferior do VS Code e acesse `http://127.0.0.1:55
     <img src="https://img.shields.io/badge/Ver%20repositório-0A0A0A?style=for-the-badge&logo=github&logoColor=818CF8" alt="GitHub"/>
   </a>
   &nbsp;
-  <img src="https://img.shields.io/badge/GitHub%20Pages-em%20breve-F472B6?style=for-the-badge&labelColor=0A0A0A" alt="Deploy"/>
+  <a href="https://wallacemichael.github.io/portfolio-dev-etepd/">
+    <img src="https://img.shields.io/badge/Ver%20deploy-0A0A0A?style=for-the-badge&logo=githubpages&logoColor=4ade80" alt="Deploy"/>
+  </a>
 </p>
 
 ---

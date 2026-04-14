@@ -1,5 +1,5 @@
 {
-  "projeto": [
+  "projetos": [
     {
       "titulo": "App do Tempo",
       "descricao": "Previsão do tempo de qualquer cidade com geolocalização, ícones dinâmicos e histórico de buscas. Consume a API do OpenWeather.",
