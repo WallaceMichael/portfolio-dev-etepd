@@ -149,7 +149,7 @@ emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
 
 ## 🔗 Acesse o projeto
 
-<p align="center">
+<p>
   <a href="https://github.com/WallaceMichael/portfolio-dev-etepd">
     <img src="https://img.shields.io/badge/Ver%20repositório-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
@@ -163,9 +163,9 @@ emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
 
 ## 👨‍💻 Autor
 
-<table align="center">
+<table>
   <tr>
-    <td align="center">
+    <td>
       <img src="https://avatars.githubusercontent.com/WallaceMichael?v=4" width="100px" style="border-radius:50%;" alt="Wallace Michael"/><br/><br/>
       <strong>Wallace Michael</strong><br/>
       <sub>Desenvolvedor em formação 🚀</sub><br/><br/>
