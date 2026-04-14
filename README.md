@@ -165,7 +165,7 @@ emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
 
 <table>
   <tr>
-    <td>
+    <td align="center">
       <img src="https://avatars.githubusercontent.com/WallaceMichael?v=4" width="100px" style="border-radius:50%;" alt="Wallace Michael"/><br/><br/>
       <strong>Wallace Michael</strong><br/>
       <sub>Desenvolvedor em formação 🚀</sub><br/><br/>
