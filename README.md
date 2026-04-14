@@ -3,12 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/WallaceMichael/portfolio-dev-etepd/stargazers">
-    <img src="https://img.shields.io/github/stars/WallaceMichael/portfolio-dev-etepd?style=flat&color=818CF8" />
-  </a>
-  <a href="https://github.com/WallaceMichael/portfolio-dev-etepd/commits/main">
-    <img src="https://img.shields.io/github/last-commit/WallaceMichael/portfolio-dev-etepd?style=flat&color=F472B6" />
-  </a>
+  <img src="https://img.shields.io/github/stars/WallaceMichael/portfolio-dev-etepd?style=flat&color=818CF8" />
+  <img src="https://img.shields.io/github/last-commit/WallaceMichael/portfolio-dev-etepd?style=flat&color=F472B6" />
   <img src="https://img.shields.io/badge/status-ativo-4ade80?style=flat" />
   <img src="https://img.shields.io/badge/license-MIT-818CF8?style=flat" />
 </p>
