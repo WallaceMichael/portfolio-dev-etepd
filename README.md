@@ -149,13 +149,13 @@ emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
 
 ## 🔗 Acesse o projeto
 
-<p>
+<p align="center">
   <a href="https://github.com/WallaceMichael/portfolio-dev-etepd">
-    <img src="https://img.shields.io/badge/Ver%20repositório-0A0A0A?style=for-the-badge&logo=github&logoColor=818CF8" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/Ver%20repositório-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   &nbsp;
   <a href="https://wallacemichael.github.io/portfolio-dev-etepd/">
-    <img src="https://img.shields.io/badge/Ver%20deploy-0A0A0A?style=for-the-badge&logo=githubpages&logoColor=4ade80" alt="Deploy"/>
+    <img src="https://img.shields.io/badge/Ver%20deploy-181717?style=for-the-badge&logo=github&logoColor=4ade80" />
   </a>
 </p>
 
@@ -163,18 +163,18 @@ emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", templateParams);
 
 ## 👨‍💻 Autor
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/WallaceMichael.png" width="80px" style="border-radius:50%"/><br/>
+      <img src="https://avatars.githubusercontent.com/WallaceMichael?v=4" width="100px" style="border-radius:50%;" alt="Wallace Michael"/><br/><br/>
       <strong>Wallace Michael</strong><br/>
       <sub>Desenvolvedor em formação 🚀</sub><br/><br/>
       <a href="https://github.com/WallaceMichael">
-        <img src="https://img.shields.io/badge/GitHub-0A0A0A?style=flat-square&logo=github&logoColor=818CF8"/>
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
       </a>
       &nbsp;
       <a href="https://linkedin.com/in/wallacemichael">
-        <img src="https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=818CF8"/>
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
       </a>
     </td>
   </tr>
