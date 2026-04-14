@@ -39,7 +39,7 @@ function initTema() {
   if (temaSalvo === "light") {
     html.classList.add("light");
   } else {
-    html.classList.remove("light"); 
+    html.classList.remove("light");
   }
 
   if (!btn) return;
@@ -151,9 +151,9 @@ async function initProjetos() {
     var data = await res.json();
     todosProjetos = data.projetos;
 
+    var path = window.location.pathname;
     var isHome =
-      window.location.pathname.includes("index") ||
-      window.location.pathname === "/";
+      path.endsWith("/") || path.endsWith("index.html");
 
     montarFiltros(todosProjetos);
     renderizarProjetos(isHome ? todosProjetos.slice(0, 3) : todosProjetos);
