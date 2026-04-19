@@ -11,6 +11,27 @@
       "demo": null
     },
     {
+      "titulo": "App do Tempo",
+      "descricao": "Previsão do tempo de qualquer cidade com geolocalização e ícones dinâmicos. Consume a API do OpenWeather.",
+      "emoji": "🌦️",
+      "techs": ["JavaScript", "CSS", "API REST"],
+      "status": "Concluído",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/api-clima",
+      "demo": "https://wallacemichael.github.io/api-clima/"
+    },
+    {
+      "titulo": "Hero GTA VI",
+      "descricao": "Recriação da hero do site oficial do GTA VI, com GSAP + ScrollTrigger para animações e interatividade.",
+      "emoji": "🎮",
+      "techs": ["GSAP", "ScrollTrigger", "JavaScript"],
+      "status": "Em desenvolvimento",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/hero-gta-vi",
+      "demo": "https://wallacemichael.github.io/hero-gta-vi/"
+
+    },
+    {
       "titulo": "Plataforma WoHub",
       "descricao": "Plataforma de cursos online com sistema de login, catálogo de cursos, aulas em vídeo e avaliações.",
       "emoji": "🎓",
@@ -34,7 +55,7 @@
       "titulo": "Landing Page de Treinamento",
       "descricao": "Landing animada, SEO otimizado com formulário de inscrição e depoimentos de alunos.",
       "emoji": "📚",
-      "techs": ["WordPress", "Elementor","PHP", "JS"],
+      "techs": ["WordPress", "Elementor", "PHP", "JS"],
       "status": "Concluído",
       "ano": "2025",
       "github": null,
@@ -44,12 +65,11 @@
       "titulo": "MovieStar",
       "descricao": "Plataforma para criar, visualizar e editar filmes na sua área de membros.",
       "emoji": "🎬",
-      "techs": ["PHP","CSS","bootstrap","MySQL"],
+      "techs": ["PHP", "CSS", "bootstrap", "MySQL"],
       "status": "Concluído",
       "ano": "2026",
       "github": "https://github.com/WallaceMichael/moviestar",
       "demo": null
-      
     },
     {
       "titulo": "Blog Verdanadesk",
@@ -60,16 +80,7 @@
       "ano": "2025",
       "github": null,
       "demo": "https://verdanadesk.com/blog"
-    },
-      {
-        "titulo": "App do Tempo",
-      "descricao": "Previsão do tempo de qualquer cidade com geolocalização e ícones dinâmicos. Consume a API do OpenWeather.",
-      "emoji": "🌦️",
-      "techs": ["JavaScript", "CSS", "API REST"],
-      "status": "Concluído",
-      "ano": "2026",
-      "github": "https://github.com/WallaceMichael/api-clima",
-      "demo": "https://wallacemichael.github.io/api-clima/"
-      }
+    }
+    
   ]
 }
