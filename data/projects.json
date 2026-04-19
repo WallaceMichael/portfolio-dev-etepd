@@ -31,8 +31,8 @@
       "demo": "https://verdanatech.com"
     },
     {
-      "titulo": "Landing Page de Curso",
-      "descricao": "Landing page para promoção de curso, com formulário de inscrição e depoimentos de alunos.",
+      "titulo": "Landing Page de Treinamento",
+      "descricao": "Landing animada, SEO otimizado com formulário de inscrição e depoimentos de alunos.",
       "emoji": "📚",
       "techs": ["WordPress", "Elementor","PHP", "JS"],
       "status": "Concluído",
@@ -60,6 +60,16 @@
       "ano": "2025",
       "github": null,
       "demo": "https://verdanadesk.com/blog"
-    }
+    },
+      {
+        "titulo": "App do Tempo",
+      "descricao": "Previsão do tempo de qualquer cidade com geolocalização e ícones dinâmicos. Consume a API do OpenWeather.",
+      "emoji": "🌦️",
+      "techs": ["JavaScript", "CSS", "API REST"],
+      "status": "Concluído",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/api-clima",
+      "demo": "https://wallacemichael.github.io/api-clima/"
+      }
   ]
 }
