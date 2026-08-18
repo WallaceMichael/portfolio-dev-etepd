@@ -11,6 +11,16 @@
       "demo": null
     },
     {
+      "titulo": "E-commerce Moda",
+      "descricao": "Plataforma de e-commerce, com carrinho, filtros e pagamentos.",
+      "emoji": "🛍️",
+      "techs": ["React", "JavaScript", "Laravel", "SCSS", "API REST"],
+      "status": "Em desenvolvimento",
+      "ano": "2026",
+      "github": "https://github.com/WallaceMichael/ecommerce-frontend",
+      "demo": null
+    },
+    {
       "titulo": "App do Tempo",
       "descricao": "Previsão do tempo de qualquer cidade com geolocalização e ícones dinâmicos. Consume a API do OpenWeather.",
       "emoji": "🌦️",
@@ -29,7 +39,6 @@
       "ano": "2026",
       "github": "https://github.com/WallaceMichael/hero-gta-vi",
       "demo": "https://wallacemichael.github.io/hero-gta-vi/"
-
     },
     {
       "titulo": "Plataforma WoHub",
@@ -81,6 +90,5 @@
       "github": null,
       "demo": "https://verdanadesk.com/blog"
     }
-    
   ]
 }
